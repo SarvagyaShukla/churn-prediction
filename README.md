@@ -39,3 +39,30 @@ This project predicts customer churn for a telecom company and visualizes result
    ```bash
    git clone https://github.com/<your-username>/<your-repo>.git
    cd <your-repo>
+
+   Install dependencies:
+
+
+pip install pandas scikit-learn matplotlib seaborn streamlit snowflake-sqlalchemy
+Run churn analysis and write predictions to Snowflake:
+
+
+python churn_analysis.py
+Start the dashboard:
+
+
+streamlit run streamlit_app.py
+
+
+📝 Notes
+Ensure your Snowflake credentials in both scripts are correct before running.
+
+CHURN_PREDICTIONS table must exist; the first run of churn_analysis.py will overwrite it with predictions.
+
+The dashboard will update automatically once new predictions are written.
+
+The project was designed for demo and proof-of-concept purposes; it can be enhanced by adding more customer behavior data (e.g., service calls, competitor offers) for better accuracy.
+
+📧 Contact
+For questions or support, contact SARVAGYA SHUKLA.
+
